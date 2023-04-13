@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>COMPLETA LA TRIVIA</h1>
+
+    <div id="pantalla-inicial">
+        <p>ELIGE LA OPCION CORRECTA</p>
+        <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>   
+    </div>
+
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="./img/a.png" alt="" id="imgCosa">
+        <div class="opciones">
+
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                    <div class="nombre" id="n0">OPCION A</div>
+            </div>
+
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                    <div class="nombre" id="n1">OPCION B</div>
+            </div>
+
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                    <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pantalla-final">
+        <h2>Corretas: <span id="numCorrectas"></span></h2>
+        <h2>Incorretas: <span id="numIncorrectas"></span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+    <footer>Desarrollado por Ruben Ruiz / Estudiante de CoderHouse</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
